@@ -1,0 +1,35 @@
+<html>
+<br>
+<head>
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="style.css">
+<style>
+    h3{
+        font-family: Roboto;
+    }
+</style>
+</head> 
+<body style="background-image:playbtn.jpeg;">
+    <h3 style="font-size:;">Welcome to the playbutton maker website</h3>
+    <a href="main.html">RETURN TO HOME PAGE</a>
+    
+<input id="userinput" placeholder="enter your channeName name" style="width: 150px; height: 30px; position: absolute; top:20px; left: 700px;"> <br><br>
+<input id="userinput2" placeholder="enter your current subscribers"style="width: 150px; height: 30px; position: absolute; top:60px; left: 700px;"> <br><br>
+<button onclick="channeName()"style="width: 150px; height: 40px; position: absolute; top:100px; left: 700px;">MAKE MY PLAY BUTTON!</button>
+<SCript>
+    function channeName() {
+        
+        var ad = document.getElementById("userinput").value;
+        var as = document.getElementById("userinput2").value;
+        document.write('<img src="diamondbtn.png" style="width:1220px; height:750px; position:absolute; top: 7px; left: 300px">');
+        document.write('<h1 style="width:500px; height:600px; position:absolute; top: 330px; left: 780px;color:#c5b09e;font-family:Roboto; ">'+ad+'</h1>');
+        document.write('<h3 style="width:500px; height:600px; position:absolute; top: 380px; left: 900px;color:#c5b09e; font-family:Roboto;">'+as+" subscribers"+'</h3>');
+        document.write('<a href="main.html">RETURN TO HOME PAGE</a>')
+        document.write('<img src="diamond_front.png" style="width:1220px; height:750px; position:absolute; top: 760px; left: 300px">')
+    }
+</SCript>
+
+</body>
+</html>
+
+
